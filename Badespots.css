@@ -1,0 +1,47 @@
+li a {
+    display: block;
+    color: #b5ccff;
+    text-align: center;
+    padding: 25px 24px;
+    text-decoration: none;
+    font-family: "Gill Sans MT";
+    font-weight: 500;
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00233e;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+li a:hover {
+    background-color: #11396b;
+}
+.toggle_button{
+    width: 30px;
+    height: 23px;
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar{
+    height: 4px;
+    width: 100%;
+    background: deeppink;
+    border-radius: 100px;
+}
+#toggle_button:checked ~ ul{
+    display: block;
+}
+input[type="checkbox"]{
+    display: none;
+}
