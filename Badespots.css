@@ -41,11 +41,47 @@ body{
 }
 
 .main{grid-area: main;
+    text-align: justify;
+    font-size: 22px;
+    margin: 25px;
+}
+h1{
+    text-align: center;
+}
+.oros{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 
 }
-
+.mcces{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.badenpicture{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 .footer{grid-area: foot;
+    text-align: center;
+    padding: 20px;
+    background: var(--nav);
+}
+.darkmode{
+    position: absolute;
+    top: 20px;
+    right: 25px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#darkmode:checked ~ header{
+    background: #383636;
+    color: aliceblue;
 }
 li{
     float:left;
@@ -77,6 +113,19 @@ input[type="checkbox"] {
     display: none;
 }
 @media screen and (max-width: 600px) {
+    .main{
+        font-size: 18px;
+        text-align: justify;
+    }
+    .oros{
+        width: 450px;
+    }
+    .mcces{
+        width: 450px;
+    }
+    .badenpicture{
+        width: 450px;
+    }
     li a {
         display: block;
         text-align: center;
@@ -101,6 +150,18 @@ input[type="checkbox"] {
         justify-content: center;
     }
 
+    .darkmode{
+        position: absolute;
+        top: 55px;
+        right: 28px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #darkmode:checked ~ header{
+        background: #383636;
+        color: aliceblue;}
     .toggle_button {
         width: 30px;
         height: 23px;
