@@ -79,7 +79,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
 }
-<<<<<<< HEAD
+
 li{
     float:left;
     margin-left: auto;
@@ -88,10 +88,10 @@ li{
 #darkmode:checked ~ header{
     background: #383636;
     color: aliceblue;
-=======
+}
 #darkmode:checked ~ *, :root{
     filter: invert(1);
->>>>>>> f6eb4e260ca62262e20c5b440b95ec06ecdbc419
+
 }
 li{
     float:left;
