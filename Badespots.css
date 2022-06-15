@@ -71,6 +71,10 @@ h1{
     background: var(--nav);
 }
 
+ul {
+    display: flex;
+    flex-grow: 1;
+}
 
 li{
     float:left;
